@@ -23,7 +23,12 @@ public class EntertainmentLibrary {
         this.booksAndFilmsCollection.add(booksAndFilmsCollection);
     }
 
+    public int countBooksAndFilmsCollection() {
+        return this.booksAndFilmsCollection.size();
+    }
 
+
+        //getters and setters
 
     public String getLibraryName() {
         return libraryName;
