@@ -43,7 +43,6 @@ public class Book extends Media implements IRead {
     public String read(int minutes) {
         return String.format("%s can be found at %s bookshop, it takes only %s minutes to read", getTitle(), shoppingCentre.getBookShopName(),minutes );
     }
-    //above method doesn't work when I run test, might be because of the shoppingCentre.getBookShopName(), not sure how else to get info from another class.
 
     //getters and setters
 

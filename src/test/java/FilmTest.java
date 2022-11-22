@@ -62,4 +62,13 @@ public class FilmTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+
+    public void canWatch() {
+        String expected = "You can watch Fight Club at Vue cinema, the film lasts 120 minutes.";
+        String actual = fightClub.watch(120);
+        System.out.println(fightClub.watch(120));
+        assertEquals(expected, actual);
+    }
+
 }

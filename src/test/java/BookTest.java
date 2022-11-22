@@ -11,9 +11,6 @@ public class BookTest {
     private Book earthlings;
     private Book prideAndPrejudice;
 
-    private ShoppingCentre shoppingCentre;
-
-
     @BeforeEach
     public void setUp(){
         earthlings = new Book("Earthlings", "horror", "Japanese", 3, "Sayaka Murata", 247, false);

@@ -1,8 +1,9 @@
 package models;
 
+import interfaces.IWatch;
 import models.Media;
 
-public class Film extends Media {
+public class Film extends Media implements IWatch {
 
     private String director;
 
@@ -35,6 +36,12 @@ public class Film extends Media {
         return String.format("This film is available in %s.", this.getLanguage());
     };
 
+
+    //method from interface
+
+    public String watch(int minutes) {
+        return String.format("You can watch %s at %s cinema, the film lasts %s minutes.", getTitle(), shoppingCentre.getCinemaName(),minutes);
+    }
 
     //getters and setters
 
