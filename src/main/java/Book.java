@@ -25,6 +25,9 @@ public class Book extends Media {
         }
     }
 
+    public String languageAvailability() {
+        return String.format("This book is written originally in %s.", getLanguage());
+    }
 
     //getters and setters
 

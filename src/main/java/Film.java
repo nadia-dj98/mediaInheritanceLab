@@ -4,7 +4,6 @@ public class Film extends Media {
     private String director;
 
 
-
     private boolean subtitlesAvailable;
     private boolean oscarReceived;
 
@@ -27,6 +26,9 @@ public class Film extends Media {
             return String.format("%s is yet to win an Oscar.", this.director);
         }
     }
+    public String languageAvailability(){
+        return String.format("This film is available in %s", this.getLanguage());
+    };
 
 
     //getters and setters

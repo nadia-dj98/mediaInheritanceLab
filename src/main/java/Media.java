@@ -26,6 +26,14 @@ public abstract class Media {
 
     }
 
+    public abstract String languageAvailability();
+
+    public String languageAvailability(String language1, String language2) {
+        return String.format("This is available in %s and %s.", language1, language2);
+    }
+
+
+
     //getters and setters
 
     public String getTitle() {

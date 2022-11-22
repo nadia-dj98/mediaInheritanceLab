@@ -30,4 +30,20 @@ public class BookTest {
         String actual = earthlings.authorAchievement();
         assertEquals(expected, actual);
     }
+
+
+    @Test
+
+    public void canPrintLanguageAvailability__noArgument() {
+        String expected = "This book is written originally in Japanese.";
+        String actual = earthlings.languageAvailability();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void canPrintLanguageAvailability__withArguments() {
+        String expected = "This is available in Japanese and English.";
+        String actual = earthlings.languageAvailability("Japanese", "English");
+        assertEquals(expected,actual);
+    }
 }
