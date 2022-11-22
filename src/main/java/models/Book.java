@@ -1,3 +1,7 @@
+package models;
+
+import models.Media;
+
 public class Book extends Media {
 
     private String author;
@@ -25,6 +29,8 @@ public class Book extends Media {
         }
     }
 
+
+    //implementing abstract method from models.Media superclass with different body
     public String languageAvailability() {
         return String.format("This book is written originally in %s.", getLanguage());
     }

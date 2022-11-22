@@ -1,3 +1,7 @@
+package models;
+
+import models.Media;
+
 import java.util.ArrayList;
 
 public class EntertainmentLibrary {

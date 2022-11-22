@@ -1,3 +1,6 @@
+package models;
+
+import models.Media;
 
 public class Film extends Media {
 
@@ -27,7 +30,7 @@ public class Film extends Media {
         }
     }
     public String languageAvailability(){
-        return String.format("This film is available in %s", this.getLanguage());
+        return String.format("This film is available in %s.", this.getLanguage());
     };
 
 

@@ -1,3 +1,4 @@
+import models.Film;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -46,6 +47,19 @@ public class FilmTest {
         assertEquals(expected,actual);
     }
 
+    @Test
+    public void canReturnLanguageAvailability__noArguments() {
+        String expected = "This film is available in Spanish.";
+        String actual = roma.languageAvailability();
+        assertEquals(expected, actual);
+    }
 
+    @Test
+
+    public void canReturnLanguageAvailability__withArguments() {
+        String expected = "This is available in Spanish and English.";
+        String actual = roma.languageAvailability("Spanish", "English");
+        assertEquals(expected, actual);
+    }
 
 }

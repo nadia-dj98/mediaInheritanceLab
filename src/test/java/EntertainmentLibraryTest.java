@@ -1,3 +1,6 @@
+import models.Book;
+import models.EntertainmentLibrary;
+import models.Film;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

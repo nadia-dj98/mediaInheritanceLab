@@ -379,14 +379,14 @@
       "updated": 1669054649414,
       "link": null,
       "locked": false,
-      "text": "Media //abstract parent class",
+      "text": "models.Media //abstract parent class",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 15,
       "containerId": null,
-      "originalText": "Media //abstract parent class"
+      "originalText": "models.Media //abstract parent class"
     },
     {
       "id": "QBlBMoi3m4P7_YFOzlZik",
@@ -488,14 +488,14 @@
       "updated": 1669054649414,
       "link": null,
       "locked": false,
-      "text": "Film",
+      "text": "models.Film",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 15,
       "containerId": null,
-      "originalText": "Film"
+      "originalText": "models.Film"
     },
     {
       "id": "ZymAhOHP658QojPK3tGL3",
@@ -522,14 +522,14 @@
       "updated": 1669054649414,
       "link": null,
       "locked": false,
-      "text": "Book",
+      "text": "models.Book",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 15,
       "containerId": null,
-      "originalText": "Book"
+      "originalText": "models.Book"
     },
     {
       "id": "USV3YYSTQ2ZWtZ5ehR4l2",
@@ -657,14 +657,14 @@
       "updated": 1669054649415,
       "link": null,
       "locked": false,
-      "text": "EntertainmentLibrary",
+      "text": "models.EntertainmentLibrary",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 15,
       "containerId": null,
-      "originalText": "EntertainmentLibrary"
+      "originalText": "models.EntertainmentLibrary"
     },
     {
       "id": "oeis6sIeb6yc8TprXxqpp",
@@ -732,14 +732,14 @@
       "updated": 1669054649415,
       "link": null,
       "locked": false,
-      "text": "//properties\n-libraryName : String;\n-media : ArrayList<Media>;",
+      "text": "//properties\n-libraryName : String;\n-media : ArrayList<models.Media>;",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 52,
       "containerId": null,
-      "originalText": "//properties\n-libraryName : String;\n-media : ArrayList<Media>;"
+      "originalText": "//properties\n-libraryName : String;\n-media : ArrayList<models.Media>;"
     },
     {
       "id": "u7Mm3wg-fdY0Cz20f3cxn",
@@ -766,14 +766,14 @@
       "updated": 1669054649415,
       "link": null,
       "locked": false,
-      "text": "//Methods\n+addMedia(Media) : void;\n+countMedia() : int;",
+      "text": "//Methods\n+addMedia(models.Media) : void;\n+countMedia() : int;",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 52,
       "containerId": null,
-      "originalText": "//Methods\n+addMedia(Media) : void;\n+countMedia() : int;"
+      "originalText": "//Methods\n+addMedia(models.Media) : void;\n+countMedia() : int;"
     },
     {
       "id": "eXY_TUr9_7kEya6CDR0K9",
