@@ -1,20 +1,23 @@
 package models;
 
+import interfaces.IRead;
 import models.Media;
 
-public class Book extends Media {
+
+public class Book extends Media implements IRead {
 
     private String author;
     private int numberOfPages;
-
-
     private boolean pulitzerPrizeWinner;
+    private ShoppingCentre shoppingCentre;
+
 
     public Book (String title, String genre, String language, int rating, String author, int numberOfPages, boolean pulitzerPrizeWinner) {
         super(title, genre, language, rating);
         this.author = author;
         this.numberOfPages = numberOfPages;
         this.pulitzerPrizeWinner = pulitzerPrizeWinner;
+        this.shoppingCentre = new ShoppingCentre("BNTA Centre", "Vue","Foyles");
 
     }
 
@@ -34,6 +37,13 @@ public class Book extends Media {
     public String languageAvailability() {
         return String.format("This book is written originally in %s.", getLanguage());
     }
+
+
+    //method from interface
+    public String read(int minutes) {
+        return String.format("%s can be found at %s bookshop, it takes only %s minutes to read", getTitle(), shoppingCentre.getBookShopName(),minutes );
+    }
+    //above method doesn't work when I run test, might be because of the shoppingCentre.getBookShopName(), not sure how else to get info from another class.
 
     //getters and setters
 

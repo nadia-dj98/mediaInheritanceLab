@@ -9,7 +9,7 @@ public class Film extends Media {
 
     private boolean subtitlesAvailable;
     private boolean oscarReceived;
-
+    private ShoppingCentre shoppingCentre;
 
     //constructor
 
@@ -18,6 +18,8 @@ public class Film extends Media {
         this.director = director;
         this.subtitlesAvailable = subtitlesAvailable;
         this.oscarReceived = oscarReceived;
+        this.shoppingCentre = new ShoppingCentre("BNTA Centre", "Vue","Foyles");
+
     }
 
     //methods

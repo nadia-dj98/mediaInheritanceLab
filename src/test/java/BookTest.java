@@ -1,4 +1,5 @@
 import models.Book;
+import models.ShoppingCentre;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,6 +10,8 @@ public class BookTest {
 
     private Book earthlings;
     private Book prideAndPrejudice;
+
+    private ShoppingCentre shoppingCentre;
 
 
     @BeforeEach
@@ -47,4 +50,14 @@ public class BookTest {
         String actual = earthlings.languageAvailability("Japanese", "English");
         assertEquals(expected,actual);
     }
+
+    @Test
+    public void canRead() {
+
+        String expected = "Earthlings can be found at Foyles bookshop, it takes only 90 minutes to read";
+        String actual = earthlings.read(90);
+        assertEquals(expected, actual);
+    }
+
+
 }
